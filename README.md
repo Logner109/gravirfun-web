@@ -2,7 +2,7 @@
 
 Prezentačný web pre GravirFun (laserové gravírovanie na mieru). Statická stránka v slovenčine, postavená na Bootstrape 5.3, hostovaná na GitHub Pages.
 
-- Adresa: https://logner109.github.io/gravirfun-web/
+- Adresa: https://gravirfun.sk (doména je nastavená v GitHub Pages, súbor `CNAME`). Kým DNS domény nesmeruje na GitHub, web nie je online – pozri „Doména“ nižšie.
 - Každá zmena v branchi `main` sa zverejní automaticky, zvyčajne do minúty.
 
 ## Štruktúra
@@ -69,13 +69,19 @@ Fotky ulož do `assets/img/produkty/` alebo `assets/img/galeria/` (ideálne pome
 
 Ďalšie dlaždice pridáš skopírovaním celého `<div class="col-6 col-lg-4">…</div>`.
 
-## Vlastná doména (napr. gravirfun.sk)
+## Doména gravirfun.sk
 
-1. U registrátora domény nastav DNS:
-   - `A` záznamy pre `gravirfun.sk` na 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
-   - `CNAME` pre `www` na `logner109.github.io`
-2. V repozitári vytvor súbor `CNAME` s obsahom `gravirfun.sk` (alebo ho nastav v Settings → Pages → Custom domain a zapni Enforce HTTPS).
-3. V `index.html` zmeň adresy v `canonical`, `og:url` a `og:image`, v `robots.txt` a `sitemap.xml` tiež. Odkazy v kóde sú relatívne, takže nič iné meniť netreba.
+Doména je už nastavená v GitHub Pages (Settings → Pages → Custom domain) a v repozitári je súbor `CNAME`. Chýba len presmerovanie DNS u registrátora (Websupport):
+
+1. V administrácii DNS pre `gravirfun.sk` zmeň záznam `A` (teraz smeruje na hosting Websupportu) na štyri záznamy `A`:
+   185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+2. Pre `www` nastav záznam `CNAME` na `logner109.github.io`.
+3. Záznamy `MX` (e-mail) nechaj bez zmeny – e-mail to neovplyvní.
+4. Po rozšírení DNS (zvyčajne do hodiny) GitHub sám vystaví HTTPS certifikát. Potom v Settings → Pages zapni **Enforce HTTPS**.
+
+Kým DNS nesmeruje na GitHub, adresa logner109.github.io/gravirfun-web presmeruje na gravirfun.sk a web sa nezobrazí. Ak chceš web dočasne vidieť na github.io adrese, odstráň Custom domain v Settings → Pages a zmaž súbor `CNAME`.
+
+Ak by sa doména niekedy zmenila, uprav adresy v `index.html` (`canonical`, `og:url`, `og:image`, JSON-LD), v `robots.txt` a `sitemap.xml`. Odkazy v kóde sú relatívne, takže nič iné meniť netreba.
 
 ## Lokálne zobrazenie
 
