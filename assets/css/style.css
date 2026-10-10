@@ -1,0 +1,500 @@
+/* GravirFun – vlastné štýly nad Bootstrapom 5.3
+   Farby vychádzajú z loga: tmavá modročierna + oranžový prechod. */
+
+:root {
+  --gf-navy: #141f2b;
+  --gf-navy-2: #1f2d3d;
+  --gf-orange: #fc5d09;
+  --gf-orange-2: #ff8a1f;
+  --gf-orange-3: #ff9a2e;
+  --gf-orange-soft: #fff1e6;
+  --gf-text: #1f2a36;
+  --gf-muted: #5f6b7a;
+  --gf-bg: #ffffff;
+  --gf-bg-alt: #f6f7f9;
+  --gf-border: #e6e9ee;
+  --gf-radius: 1.25rem;
+  --gf-shadow: 0 10px 30px rgba(20, 31, 43, .07);
+  --gf-shadow-lg: 0 20px 50px rgba(20, 31, 43, .12);
+
+  --bs-body-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --bs-body-color: var(--gf-text);
+  --bs-body-bg: var(--gf-bg);
+  --bs-link-color: var(--gf-orange);
+  --bs-link-hover-color: #d64c02;
+  --bs-link-color-rgb: 252, 93, 9;
+  --bs-link-hover-color-rgb: 214, 76, 2;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  background: var(--gf-bg);
+  color: var(--gf-text);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .h5 {
+  color: var(--gf-navy);
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+
+p { color: var(--gf-text); }
+
+.text-brand { color: var(--gf-orange); }
+.text-white-75 { color: rgba(255, 255, 255, .78) !important; }
+
+/* Ikony */
+.icon {
+  width: 1.25em;
+  height: 1.25em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vertical-align: -.25em;
+  flex: none;
+}
+.icon-xl { width: 3rem; height: 3rem; stroke-width: 1.5; }
+
+/* Tlačidlá */
+.btn {
+  --bs-btn-border-radius: .8rem;
+  --bs-btn-font-weight: 600;
+  --bs-btn-padding-x: 1.4rem;
+  --bs-btn-padding-y: .7rem;
+}
+.btn-lg {
+  --bs-btn-padding-x: 1.7rem;
+  --bs-btn-padding-y: .85rem;
+  --bs-btn-font-size: 1.05rem;
+}
+.btn-brand {
+  color: #fff;
+  background: linear-gradient(180deg, var(--gf-orange-2) 0%, var(--gf-orange) 100%);
+  border: 0;
+  box-shadow: 0 8px 20px rgba(252, 93, 9, .28);
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+.btn-brand:hover, .btn-brand:focus-visible {
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(252, 93, 9, .34);
+  filter: brightness(1.04);
+}
+.btn-brand:active { transform: translateY(0); color: #fff; }
+.btn-brand:disabled { color: #fff; opacity: .7; }
+.btn-outline-navy {
+  color: var(--gf-navy);
+  border: 2px solid var(--gf-navy);
+  background: transparent;
+}
+.btn-outline-navy:hover, .btn-outline-navy:focus-visible {
+  color: #fff;
+  background: var(--gf-navy);
+  border-color: var(--gf-navy);
+}
+
+/* Navigácia */
+#mainNav {
+  background: rgba(255, 255, 255, .92);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+  transition: box-shadow .2s ease, background .2s ease;
+}
+#mainNav.scrolled {
+  background: rgba(255, 255, 255, .97);
+  box-shadow: 0 2px 20px rgba(20, 31, 43, .08);
+}
+#mainNav .navbar-brand img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+#mainNav .nav-link {
+  color: var(--gf-navy);
+  font-weight: 600;
+  padding: .5rem .75rem;
+  border-radius: .5rem;
+  white-space: nowrap;
+  transition: color .15s ease, background .15s ease;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #mainNav .navbar-brand img { height: 38px; }
+  #mainNav .nav-link { padding: .5rem .5rem; font-size: .92rem; }
+  #mainNav .btn-brand { --bs-btn-padding-x: 1rem; --bs-btn-font-size: .92rem; white-space: nowrap; }
+}
+#mainNav .nav-link:hover, #mainNav .nav-link:focus-visible { color: var(--gf-orange); }
+#mainNav .nav-link.active { color: var(--gf-orange); }
+#mainNav .navbar-toggler { border: 0; padding: .35rem .5rem; }
+#mainNav .navbar-toggler:focus { box-shadow: 0 0 0 .2rem rgba(252, 93, 9, .25); }
+@media (max-width: 991.98px) {
+  #mainNav .navbar-collapse {
+    margin-top: .75rem;
+    padding: .75rem .25rem 1rem;
+    border-top: 1px solid var(--gf-border);
+  }
+  #mainNav .btn-brand { width: 100%; }
+}
+
+/* Sekcie */
+.section { padding: 5.5rem 0; }
+.section-alt { background: var(--gf-bg-alt); }
+.section-head {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+.section-head h2 { font-size: clamp(1.85rem, 3.2vw, 2.5rem); margin-bottom: .75rem; }
+.section-head .sub { color: var(--gf-muted); font-size: 1.1rem; margin: 0; }
+.eyebrow {
+  display: inline-block;
+  color: var(--gf-orange);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin-bottom: .75rem;
+}
+.eyebrow-light { color: var(--gf-orange-3); }
+@media (max-width: 767.98px) {
+  .section { padding: 4rem 0; }
+}
+
+/* Úvod */
+.hero {
+  padding: 8.5rem 0 5rem;
+  background:
+    radial-gradient(900px 500px at 85% 10%, var(--gf-orange-soft) 0%, rgba(255, 241, 230, 0) 60%),
+    radial-gradient(600px 400px at 5% 90%, #f3f5f8 0%, rgba(243, 245, 248, 0) 60%),
+    var(--gf-bg);
+}
+.hero-title {
+  font-size: clamp(2.4rem, 5.2vw, 3.9rem);
+  line-height: 1.08;
+  margin-bottom: 1.25rem;
+}
+.hero-lead {
+  color: var(--gf-muted);
+  font-size: 1.2rem;
+  max-width: 34rem;
+}
+.hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem 1.5rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  color: var(--gf-navy);
+  font-weight: 600;
+  font-size: .95rem;
+}
+.hero-points .icon { color: var(--gf-orange); stroke-width: 2.5; }
+.hero-visual {
+  position: relative;
+  max-width: 560px;
+  margin: 0 auto;
+}
+.hero-visual > svg { width: 100%; height: auto; display: block; }
+.chip {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  background: #fff;
+  color: var(--gf-navy);
+  font-weight: 600;
+  font-size: .9rem;
+  padding: .45rem .9rem;
+  border-radius: 999px;
+  box-shadow: var(--gf-shadow);
+  border: 1px solid var(--gf-border);
+  animation: float 6s ease-in-out infinite;
+}
+.chip .icon { color: var(--gf-orange); }
+.chip-1 { left: 2%; top: 14%; animation-delay: 0s; }
+.chip-2 { right: 4%; top: 6%; animation-delay: -1.5s; }
+.chip-3 { left: 6%; bottom: 10%; animation-delay: -3s; }
+.chip-4 { right: 8%; bottom: 4%; animation-delay: -4.5s; }
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .chip { animation: none; }
+}
+@media (max-width: 767.98px) {
+  .hero { padding-top: 7rem; }
+  .chip { font-size: .8rem; padding: .35rem .7rem; }
+}
+
+/* Materiály */
+.material {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-radius: var(--gf-radius);
+  background: #fff;
+  border: 1px solid var(--gf-border);
+  height: 100%;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.material:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--gf-shadow);
+  border-color: #ffd9bf;
+}
+.material h3 { font-size: 1.05rem; margin: 1rem 0 .4rem; }
+.material p { color: var(--gf-muted); font-size: .88rem; margin: 0; }
+.icon-circle {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--gf-orange-soft);
+  color: var(--gf-orange);
+}
+.icon-circle .icon { width: 1.6rem; height: 1.6rem; }
+.icon-circle-sm { width: 44px; height: 44px; margin: 0; }
+.icon-circle-sm .icon { width: 1.3rem; height: 1.3rem; }
+
+/* Karty a produkty */
+.card-soft {
+  border: 0;
+  border-radius: var(--gf-radius);
+  box-shadow: var(--gf-shadow);
+  overflow: hidden;
+  background: #fff;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.card-soft:hover { transform: translateY(-4px); box-shadow: var(--gf-shadow-lg); }
+.product .card-body { padding: 1.5rem; }
+.product p { color: var(--gf-muted); font-size: .95rem; }
+.product .more {
+  display: inline-flex;
+  align-items: center;
+  gap: .25rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.product .more:hover { text-decoration: underline; }
+.product-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+/* Zástupné vizuály (kým nie sú fotky) */
+.ph {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  color: var(--gf-navy);
+  background: linear-gradient(135deg, #f6f7f9, #e9edf2);
+}
+.ph .icon-xl { opacity: .55; }
+.ph-wood { background: linear-gradient(135deg, #f8ead9, #ead1b3); color: #7a4f2a; }
+.ph-glass { background: linear-gradient(135deg, #e8f3fa, #cfe3f0); color: #2b5a7a; }
+.ph-metal { background: linear-gradient(135deg, #eef0f3, #d6dbe2); color: #46515f; }
+.ph-leather { background: linear-gradient(135deg, #f3e4da, #dfc2ad); color: #7a4a2e; }
+.ph-orange { background: linear-gradient(135deg, #fff1e6, #ffd4b0); color: #c94a05; }
+.ph-navy { background: linear-gradient(135deg, #1f2d3d, #141f2b); color: #ff9a2e; }
+.ph-badge {
+  position: absolute;
+  left: .75rem;
+  bottom: .75rem;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, .85);
+  color: var(--gf-navy);
+  padding: .25rem .6rem;
+  border-radius: 999px;
+}
+
+/* Pre firmy */
+.band-navy {
+  background:
+    radial-gradient(700px 400px at 90% 0%, rgba(252, 93, 9, .22) 0%, rgba(252, 93, 9, 0) 60%),
+    var(--gf-navy);
+  color: #fff;
+}
+.band-navy h2 { font-size: clamp(1.85rem, 3.2vw, 2.4rem); }
+.feature-tile {
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, .05);
+  border: 1px solid rgba(255, 255, 255, .1);
+  transition: background .2s ease, transform .2s ease;
+}
+.feature-tile:hover { background: rgba(255, 255, 255, .09); transform: translateY(-3px); }
+.feature-tile .icon { width: 1.8rem; height: 1.8rem; color: var(--gf-orange-3); stroke-width: 1.75; }
+.feature-tile h3 { color: #fff; font-size: 1.05rem; margin: .9rem 0 .4rem; }
+.feature-tile p { color: rgba(255, 255, 255, .72); font-size: .92rem; margin: 0; }
+
+/* Postup */
+.step {
+  position: relative;
+  padding: 2rem 1.5rem 1.5rem;
+  border-radius: var(--gf-radius);
+  border: 1px solid var(--gf-border);
+  background: #fff;
+  height: 100%;
+  text-align: center;
+}
+.step-number {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, var(--gf-orange-2), var(--gf-orange));
+  color: #fff;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 14px rgba(252, 93, 9, .3);
+}
+.step h3 { font-size: 1.15rem; margin: 1rem 0 .5rem; }
+.step p { color: var(--gf-muted); font-size: .95rem; margin: 0; }
+.price-box {
+  padding: 2rem;
+  border-radius: var(--gf-radius);
+  background: var(--gf-orange-soft);
+  border: 1px solid #ffd9bf;
+}
+.price-box h3 { font-size: 1.3rem; }
+.price-box p { color: var(--gf-text); }
+
+/* Galéria */
+.gallery-item { margin: 0; }
+.gallery-item .ph, .gallery-item img {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--gf-shadow);
+}
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+.gallery-item figcaption {
+  margin-top: .75rem;
+  font-weight: 600;
+  color: var(--gf-navy);
+  font-size: .95rem;
+}
+
+/* Kontakt */
+.contact-card {
+  height: 100%;
+  padding: 2rem;
+  border-radius: var(--gf-radius);
+  background: var(--gf-bg-alt);
+  border: 1px solid var(--gf-border);
+}
+.contact-list li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+.contact-list .label {
+  display: block;
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--gf-muted);
+  font-weight: 600;
+  margin-bottom: .15rem;
+}
+.contact-list a { color: var(--gf-navy); font-weight: 600; text-decoration: none; }
+.contact-list a:hover { color: var(--gf-orange); }
+.contact-form .form-label { font-weight: 600; color: var(--gf-navy); }
+.contact-form .req { color: var(--gf-orange); }
+.contact-form .form-control, .contact-form .form-select {
+  border-radius: .7rem;
+  padding: .75rem .95rem;
+  border-color: #d9dee5;
+}
+.contact-form .form-control:focus, .contact-form .form-select:focus {
+  border-color: var(--gf-orange-2);
+  box-shadow: 0 0 0 .25rem rgba(252, 93, 9, .18);
+}
+.contact-form .form-check-input:checked {
+  background-color: var(--gf-orange);
+  border-color: var(--gf-orange);
+}
+.contact-form .form-check-input:focus { box-shadow: 0 0 0 .25rem rgba(252, 93, 9, .18); border-color: var(--gf-orange-2); }
+
+/* Pätička */
+.footer {
+  background: var(--gf-bg-alt);
+  border-top: 1px solid var(--gf-border);
+  padding: 4rem 0 2rem;
+}
+.footer-logo { width: 220px; max-width: 100%; height: auto; }
+.footer-title {
+  font-size: .85rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--gf-muted);
+  margin-bottom: 1rem;
+}
+.footer-links li { margin-bottom: .5rem; }
+.footer-links a, .footer-address a { color: var(--gf-navy); text-decoration: none; font-weight: 500; }
+.footer-links a:hover, .footer-address a:hover { color: var(--gf-orange); }
+.footer-address { color: var(--gf-muted); font-style: normal; line-height: 1.7; margin: 0; overflow-wrap: anywhere; }
+.contact-list a, .contact-list span { overflow-wrap: anywhere; }
+.footer-bottom {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gf-border);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .5rem 1.5rem;
+  color: var(--gf-muted);
+  font-size: .9rem;
+}
+.footer-bottom a { color: var(--gf-muted); }
+.footer-bottom a:hover { color: var(--gf-orange); }
+
+/* Podstránky (ochrana údajov, 404) */
+.page {
+  padding: 8rem 0 5rem;
+  min-height: 70vh;
+}
+.page .content { max-width: 760px; }
+.page h1 { font-size: clamp(2rem, 4vw, 2.75rem); margin-bottom: 1.5rem; }
+.page h2 { font-size: 1.35rem; margin: 2.25rem 0 .75rem; }
+.page p, .page li { color: var(--gf-text); line-height: 1.7; }
+.page .meta { color: var(--gf-muted); font-size: .9rem; }
+.page-404 { text-align: center; }
+.page-404 .big {
+  font-size: clamp(5rem, 15vw, 9rem);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--gf-orange);
+  letter-spacing: -.04em;
+}

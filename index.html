@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GravirFun – gravírovanie na mieru | Personalizované darčeky a reklamné predmety</title>
+  <meta name="description" content="GravirFun – laserové gravírovanie na mieru. Personalizované darčeky s venovaním, reklamné predmety pre firmy, menovky, trofeje a drobnosti na drevo, sklo, kov či kožu. Pošlite nám nezáväzný dopyt.">
+  <meta name="theme-color" content="#ff6a00">
+  <!-- DOPLNIŤ: po nasadení vlastnej domény zmeň adresu v canonical, og:url a og:image -->
+  <link rel="canonical" href="https://logner109.github.io/gravirfun-web/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:site_name" content="GravirFun">
+  <meta property="og:title" content="GravirFun – gravírujeme vaše nápady">
+  <meta property="og:description" content="Laserové gravírovanie na mieru: personalizované darčeky, reklamné predmety pre firmy a drobnosti s príbehom.">
+  <meta property="og:url" content="https://logner109.github.io/gravirfun-web/">
+  <meta property="og:image" content="https://logner109.github.io/gravirfun-web/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "GravirFun",
+    "description": "Laserové gravírovanie na mieru – personalizované darčeky, reklamné predmety pre firmy, menovky a trofeje.",
+    "url": "https://logner109.github.io/gravirfun-web/",
+    "image": "https://logner109.github.io/gravirfun-web/assets/img/og-image.jpg",
+    "areaServed": "SK",
+    "parentOrganization": { "@type": "Organization", "name": "Jomi Lux" }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Ikony (inline SVG sprite) -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-tree" viewBox="0 0 24 24"><path d="M12 2l5 7h-3l4 5h-4l3 5H7l3-5H6l4-5H7z"/><path d="M12 19v3"/></symbol>
+    <symbol id="i-glass" viewBox="0 0 24 24"><path d="M7 2h10l-.7 7.5a4.3 4.3 0 0 1-8.6 0z"/><path d="M12 14v6M8 21h8"/></symbol>
+    <symbol id="i-nut" viewBox="0 0 24 24"><path d="M12 2l8.66 5v10L12 22l-8.66-5V7z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M15 14h4"/></symbol>
+    <symbol id="i-cube" viewBox="0 0 24 24"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></symbol>
+    <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20M8 3l4 6 4-6"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8"/><path d="M12 8v13"/><path d="M12 8c-1.5-3-5-3-5-1s3 1 5 1zm0 0c1.5-3 5-3 5-1s-3 1-5 1z"/></symbol>
+    <symbol id="i-rings" viewBox="0 0 24 24"><circle cx="9" cy="13" r="6"/><circle cx="15" cy="13" r="6"/><path d="M12 3l-2 3h4z"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M2 13h20"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><circle cx="7" cy="7" r="1.5"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/><path d="M6 5H3v2a4 4 0 0 0 3 3.87M18 5h3v2a4 4 0 0 1-3 3.87"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2l10 5-10 5L2 7z"/><path d="M2 12l10 5 10-5M2 17l10 5 10-5"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M4 2v20l3-2 3 2 2-2 2 2 3-2 3 2V2l-3 2-3-2-2 2-2-2-3 2z"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></symbol>
+  </svg>
+
+  <!-- Navigácia -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" aria-label="Hlavná navigácia">
+    <div class="container">
+      <a class="navbar-brand" href="#uvod">
+        <img src="assets/img/logo-nav.png" alt="GravirFun" width="520" height="122">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Otvoriť menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#materialy">Materiály</a></li>
+          <li class="nav-item"><a class="nav-link" href="#produkty">Produkty</a></li>
+          <li class="nav-item"><a class="nav-link" href="#firmy">Pre firmy</a></li>
+          <li class="nav-item"><a class="nav-link" href="#postup">Ako to funguje</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galéria</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a class="btn btn-brand" href="#kontakt">Nezáväzný dopyt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Úvod -->
+    <header id="uvod" class="hero">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <span class="eyebrow">Laserové gravírovanie na mieru</span>
+            <h1 class="hero-title">Gravírujeme vaše <span class="text-brand">nápady</span>.</h1>
+            <p class="lead hero-lead">Personalizované darčeky, reklamné predmety aj drobnosti s venovaním. Pošlite nám svoj nápad a my ho prenesieme na drevo, sklo, kov, kožu či iný materiál.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#kontakt" class="btn btn-brand btn-lg">Nezáväzný dopyt</a>
+              <a href="#produkty" class="btn btn-outline-navy btn-lg">Pozrieť, čo vyrábame</a>
+            </div>
+            <ul class="hero-points list-unstyled">
+              <li><svg class="icon"><use href="#i-check"/></svg> Individuálny prístup</li>
+              <li><svg class="icon"><use href="#i-check"/></svg> Už od jedného kusu</li>
+              <li><svg class="icon"><use href="#i-check"/></svg> Rôzne materiály</li>
+              <li><svg class="icon"><use href="#i-check"/></svg> Pre firmy na faktúru</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-visual">
+              <svg viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="heroSvgTitle">
+                <title id="heroSvgTitle">Ilustrácia: laser gravíruje nápis na drevenú tabuľku</title>
+                <defs>
+                  <radialGradient id="blob" cx="50%" cy="50%" r="50%">
+                    <stop offset="0" stop-color="#ffd3b3"/>
+                    <stop offset="1" stop-color="#fff3ea" stop-opacity="0"/>
+                  </radialGradient>
+                  <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#e6ba88"/>
+                    <stop offset="1" stop-color="#b9834f"/>
+                  </linearGradient>
+                  <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#ff9a2e" stop-opacity="0"/>
+                    <stop offset="1" stop-color="#fc5d09"/>
+                  </linearGradient>
+                  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur stdDeviation="4" result="b"/>
+                    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                  </filter>
+                  <filter id="shadow" x="-10%" y="-10%" width="120%" height="140%">
+                    <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#141f2b" flood-opacity=".18"/>
+                  </filter>
+                </defs>
+                <ellipse cx="290" cy="235" rx="260" ry="195" fill="url(#blob)"/>
+                <g filter="url(#shadow)" transform="rotate(-4 280 250)">
+                  <rect x="90" y="140" width="380" height="220" rx="20" fill="url(#wood)"/>
+                  <rect x="104" y="154" width="352" height="192" rx="14" fill="none" stroke="#7a4f2a" stroke-opacity=".35" stroke-width="2"/>
+                  <path d="M100 190 C 180 180, 260 200, 460 185" stroke="#8b5a30" stroke-opacity=".18" fill="none" stroke-width="3"/>
+                  <path d="M100 300 C 200 310, 300 290, 460 305" stroke="#8b5a30" stroke-opacity=".15" fill="none" stroke-width="2"/>
+                  <path d="M120 330 C 220 322, 330 340, 440 330" stroke="#8b5a30" stroke-opacity=".12" fill="none" stroke-width="2"/>
+                  <circle cx="120" cy="170" r="5" fill="#6b4323" opacity=".45"/>
+                  <circle cx="440" cy="170" r="5" fill="#6b4323" opacity=".45"/>
+                  <circle cx="120" cy="330" r="5" fill="#6b4323" opacity=".45"/>
+                  <circle cx="440" cy="330" r="5" fill="#6b4323" opacity=".45"/>
+                  <text x="280" y="246" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="46" fill="#f6e2c8" opacity=".6" transform="translate(0,1.5)">Váš nápad</text>
+                  <text x="280" y="246" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="46" fill="#55341a">Váš nápad</text>
+                  <text x="280" y="284" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" letter-spacing="4" fill="#55341a" opacity=".85">VYGRAVÍROVANÝ NA MIERU</text>
+                </g>
+                <line x1="462" y1="-10" x2="404" y2="214" stroke="url(#beam)" stroke-width="3" stroke-linecap="round"/>
+                <g filter="url(#glow)" transform="translate(404 214)">
+                  <polygon points="0,-24 3.7,-9 17,-17 9,-3.7 24,0 9,3.7 17,17 3.7,9 0,24 -3.7,9 -17,17 -9,3.7 -24,0 -9,-3.7 -17,-17 -3.7,-9" fill="#ff9a2e"/>
+                  <polygon points="0,-10 1.5,-3.7 7,-7 3.7,-1.5 10,0 3.7,1.5 7,7 1.5,3.7 0,10 -1.5,3.7 -7,7 -3.7,1.5 -10,0 -3.7,-1.5 -7,-7 -1.5,-3.7" fill="#fff4d6"/>
+                </g>
+                <circle cx="436" cy="184" r="3" fill="#fc5d09" opacity=".8"/>
+                <circle cx="374" cy="190" r="2.5" fill="#ff9a2e" opacity=".8"/>
+                <circle cx="426" cy="240" r="2" fill="#ff9a2e" opacity=".7"/>
+              </svg>
+              <span class="chip chip-1"><svg class="icon"><use href="#i-tree"/></svg> Drevo</span>
+              <span class="chip chip-2"><svg class="icon"><use href="#i-glass"/></svg> Sklo</span>
+              <span class="chip chip-3"><svg class="icon"><use href="#i-nut"/></svg> Kov</span>
+              <span class="chip chip-4"><svg class="icon"><use href="#i-wallet"/></svg> Koža</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Materiály -->
+    <section id="materialy" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Materiály</span>
+          <h2>Čo všetko gravírujeme</h2>
+          <p class="sub">Robíme takmer do všetkého. Vyberte si materiál, ktorý sa k vášmu nápadu hodí – alebo nám napíšte a vyskúšame to spolu.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="material">
+              <div class="icon-circle"><svg class="icon"><use href="#i-tree"/></svg></div>
+              <h3>Drevo</h3>
+              <p>Lopáriky, rámiky, krabičky, ozdoby. Kresba dreva vynikne s každým detailom.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="material">
+              <div class="icon-circle"><svg class="icon"><use href="#i-glass"/></svg></div>
+              <h3>Sklo</h3>
+              <p>Poháre, fľaše, vázy. Jemná matná gravúra, ktorá sa nikdy nezmyje.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="material">
+              <div class="icon-circle"><svg class="icon"><use href="#i-nut"/></svg></div>
+              <h3>Kov</h3>
+              <p>Nerezové fľaše, perá, plakety, nástroje. Trvácne a presné označenie.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="material">
+              <div class="icon-circle"><svg class="icon"><use href="#i-wallet"/></svg></div>
+              <h3>Koža</h3>
+              <p>Peňaženky, opasky, kľúčenky, zápisníky. Elegantné a osobné.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="material">
+              <div class="icon-circle"><svg class="icon"><use href="#i-cube"/></svg></div>
+              <h3>Plast a akryl</h3>
+              <p>Menovky, štítky, dekorácie a svietiace akrylové tabuľky.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="material">
+              <div class="icon-circle"><svg class="icon"><use href="#i-gem"/></svg></div>
+              <h3>Kameň a bridlica</h3>
+              <p>Bridlicové podložky, kamienky a pamiatkové predmety.</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-center text-muted mt-4 mb-0">Nenašli ste svoj materiál? <a href="#kontakt">Napíšte nám</a> – radi vyskúšame aj niečo nové.</p>
+      </div>
+    </section>
+
+    <!-- Produkty -->
+    <section id="produkty" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Produkty</span>
+          <h2>Čo vyrábame</h2>
+          <p class="sub">Gro našej práce sú personalizované veci – od jedného darčeka pre blízkeho človeka až po stovky kusov pre firmu. Fotografie skutočných výrobkov priebežne dopĺňame.</p>
+        </div>
+        <div class="row g-4">
+          <!-- Produkt: Darčeky s venovaním. Ilustráciu nahraď fotkou: <img class="product-img" src="assets/img/produkty/darceky.jpg" alt="..."> -->
+          <div class="col-md-6 col-lg-4">
+            <article class="card card-soft product h-100">
+              <div class="ph ph-wood"><svg class="icon icon-xl"><use href="#i-gift"/></svg></div>
+              <div class="card-body">
+                <h3 class="h5">Darčeky s venovaním</h3>
+                <p>Lopáriky, rámiky, krabičky na víno, zápisníky či hrnčeky s menom, dátumom alebo odkazom, ktorý poteší.</p>
+                <a href="#kontakt" class="more">Chcem niečo podobné <svg class="icon"><use href="#i-chevron"/></svg></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card card-soft product h-100">
+              <div class="ph ph-glass"><svg class="icon icon-xl"><use href="#i-rings"/></svg></div>
+              <div class="card-body">
+                <h3 class="h5">Svadby a výročia</h3>
+                <p>Poháre pre novomanželov, dosky s dátumom svadby, darčeky pre svedkov, rodičov a hostí.</p>
+                <a href="#kontakt" class="more">Chcem niečo podobné <svg class="icon"><use href="#i-chevron"/></svg></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card card-soft product h-100">
+              <div class="ph ph-navy"><svg class="icon icon-xl"><use href="#i-briefcase"/></svg></div>
+              <div class="card-body">
+                <h3 class="h5">Reklamné predmety pre firmy</h3>
+                <p>Perá, kľúčenky, USB kľúče, fľaše a zápisníky s vaším logom. Aj v menších sériách.</p>
+                <a href="#kontakt" class="more" data-typ="firma">Chcem ponuku pre firmu <svg class="icon"><use href="#i-chevron"/></svg></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card card-soft product h-100">
+              <div class="ph ph-metal"><svg class="icon icon-xl"><use href="#i-tag"/></svg></div>
+              <div class="card-body">
+                <h3 class="h5">Menovky, štítky a tabuľky</h3>
+                <p>Dverové štítky, menovky na stôl, čísla domov, označenie zariadení a inventára.</p>
+                <a href="#kontakt" class="more">Chcem niečo podobné <svg class="icon"><use href="#i-chevron"/></svg></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card card-soft product h-100">
+              <div class="ph ph-orange"><svg class="icon icon-xl"><use href="#i-trophy"/></svg></div>
+              <div class="card-body">
+                <h3 class="h5">Ocenenia a trofeje</h3>
+                <p>Plakety, diplomy na dreve či akryle, medaily a poďakovania pre športové kluby aj firmy.</p>
+                <a href="#kontakt" class="more">Chcem niečo podobné <svg class="icon"><use href="#i-chevron"/></svg></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card card-soft product h-100">
+              <div class="ph ph-leather"><svg class="icon icon-xl"><use href="#i-star"/></svg></div>
+              <div class="card-body">
+                <h3 class="h5">Dekorácie a drobnosti</h3>
+                <p>Vianočné ozdoby, prívesky, magnetky, puzzle s fotkou a iné maličkosti s osobným odkazom.</p>
+                <a href="#kontakt" class="more">Chcem niečo podobné <svg class="icon"><use href="#i-chevron"/></svg></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pre firmy -->
+    <section id="firmy" class="section band-navy">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-5">
+            <span class="eyebrow eyebrow-light">Pre firmy</span>
+            <h2 class="text-white">Reklamné predmety a riešenia pre firmy</h2>
+            <p class="lead text-white-75">Potrebujete predmety s logom pre klientov, darčeky pre tím alebo označenie prevádzky? Pripravíme ponuku na mieru a vystavíme faktúru.</p>
+            <a href="#kontakt" class="btn btn-brand btn-lg mt-2" data-typ="firma">Dopyt pre firmy</a>
+            <p class="small text-white-50 mt-3 mb-0">Fakturáciu zabezpečuje spoločnosť Jomi Lux.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="feature-tile">
+                  <svg class="icon"><use href="#i-pen"/></svg>
+                  <h3>Predmety s logom</h3>
+                  <p>Perá, kľúčenky, fľaše, zápisníky, USB kľúče – váš brand na každom kuse.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="feature-tile">
+                  <svg class="icon"><use href="#i-heart"/></svg>
+                  <h3>Darčeky pre klientov a tím</h3>
+                  <p>Originálne poďakovanie, ktoré neskončí v šuplíku.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="feature-tile">
+                  <svg class="icon"><use href="#i-tag"/></svg>
+                  <h3>Označenie a menovky</h3>
+                  <p>Dverové štítky, menovky, označenie strojov, nástrojov a inventára.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="feature-tile">
+                  <svg class="icon"><use href="#i-layers"/></svg>
+                  <h3>Malé aj väčšie série</h3>
+                  <p>Od pár kusov po stovky. Dohodneme termín, ktorý vám sadne.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ako to funguje -->
+    <section id="postup" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Postup</span>
+          <h2>Ako to funguje</h2>
+          <p class="sub">Tri kroky od nápadu k hotovému výrobku. Nemusíte mať nič pripravené – stačí pár viet.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="icon-circle"><svg class="icon"><use href="#i-send"/></svg></div>
+              <h3>Pošlite nám nápad</h3>
+              <p>Napíšte, čo chcete gravírovať: predmet, materiál, text alebo logo, počet kusov a termín. Detaily doladíme spolu.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="icon-circle"><svg class="icon"><use href="#i-file"/></svg></div>
+              <h3>Pripravíme návrh a cenu</h3>
+              <p>Ozveme sa s otázkami, návrhom grafiky a kalkuláciou. Cena je vždy individuálna – podľa materiálu, veľkosti, počtu kusov a náročnosti.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="icon-circle"><svg class="icon"><use href="#i-zap"/></svg></div>
+              <h3>Gravírujeme a odovzdáme</h3>
+              <p>Po odsúhlasení návrhu vyrobíme a dohodneme sa na osobnom odbere alebo zaslaní.</p>
+            </div>
+          </div>
+        </div>
+        <div class="price-box mt-5">
+          <div class="row align-items-center gy-3">
+            <div class="col-lg-8">
+              <h3>Prečo nemáme cenník?</h3>
+              <p class="mb-0">Každá zákazka je iná. Gravírovanie jedného prívesku a dvesto pier s logom sa líši v čase, materiáli aj príprave grafiky. Preto cenu stanovujeme individuálne na dotaz – rýchlo, férovo a bez záväzkov.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="#kontakt" class="btn btn-brand">Chcem cenovú ponuku</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galéria -->
+    <section id="galeria" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Galéria</span>
+          <h2>Ukážky našej práce</h2>
+          <p class="sub">Sme na začiatku a galériu plníme postupne. Fotografie skutočných výrobkov tu pribudnú čoskoro.</p>
+        </div>
+        <!-- Dlaždicu nahraď fotkou: <figure class="gallery-item"><img src="assets/img/galeria/01.jpg" alt="Lopárik s venovaním"><figcaption>Lopárik s venovaním</figcaption></figure> -->
+        <div class="row g-4">
+          <div class="col-6 col-lg-4">
+            <figure class="gallery-item">
+              <div class="ph ph-wood"><svg class="icon icon-xl"><use href="#i-image"/></svg><span class="ph-badge">Fotografia pribudne</span></div>
+              <figcaption>Lopárik s venovaním</figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-lg-4">
+            <figure class="gallery-item">
+              <div class="ph ph-glass"><svg class="icon icon-xl"><use href="#i-image"/></svg><span class="ph-badge">Fotografia pribudne</span></div>
+              <figcaption>Gravírovaný pohár</figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-lg-4">
+            <figure class="gallery-item">
+              <div class="ph ph-leather"><svg class="icon icon-xl"><use href="#i-image"/></svg><span class="ph-badge">Fotografia pribudne</span></div>
+              <figcaption>Kožená kľúčenka s iniciálami</figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-lg-4">
+            <figure class="gallery-item">
+              <div class="ph ph-navy"><svg class="icon icon-xl"><use href="#i-image"/></svg><span class="ph-badge">Fotografia pribudne</span></div>
+              <figcaption>Pero s logom firmy</figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-lg-4">
+            <figure class="gallery-item">
+              <div class="ph ph-orange"><svg class="icon icon-xl"><use href="#i-image"/></svg><span class="ph-badge">Fotografia pribudne</span></div>
+              <figcaption>Drevená plaketa</figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-lg-4">
+            <figure class="gallery-item">
+              <div class="ph ph-metal"><svg class="icon icon-xl"><use href="#i-image"/></svg><span class="ph-badge">Fotografia pribudne</span></div>
+              <figcaption>Vianočná ozdoba s menom</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Kontakt</span>
+          <h2>Napíšte nám svoj nápad</h2>
+          <p class="sub">Nezáväzne. Ozveme sa s otázkami alebo rovno s cenovou ponukou.</p>
+        </div>
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="contact-card">
+              <h3 class="h5 mb-4">Kontaktné údaje</h3>
+              <ul class="contact-list list-unstyled">
+                <li>
+                  <div class="icon-circle icon-circle-sm"><svg class="icon"><use href="#i-mail"/></svg></div>
+                  <div>
+                    <span class="label">E-mail</span>
+                    <!-- DOPLNIŤ: skontroluj e-mailovú adresu -->
+                    <a href="mailto:obj.gravirfun@gravirfun.sk" data-contact-email>obj.gravirfun@gravirfun.sk</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon-circle icon-circle-sm"><svg class="icon"><use href="#i-phone"/></svg></div>
+                  <div>
+                    <span class="label">Telefón</span>
+                    <!-- DOPLNIŤ: telefónne číslo (zatiaľ zástupné) -->
+                    <a href="tel:+421900000000">+421 900 000 000</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon-circle icon-circle-sm"><svg class="icon"><use href="#i-pin"/></svg></div>
+                  <div>
+                    <span class="label">Kde vyrábame</span>
+                    <!-- DOPLNIŤ: mesto alebo región -->
+                    <span>Slovensko · osobný odber po dohode</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon-circle icon-circle-sm"><svg class="icon"><use href="#i-receipt"/></svg></div>
+                  <div>
+                    <span class="label">Fakturácia</span>
+                    <span>Jomi Lux</span>
+                  </div>
+                </li>
+              </ul>
+              <p class="small text-muted mb-0">Logo alebo fotku predlohy nám pošlite e-mailom. Do formulára zatiaľ prílohu nepridáte.</p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <form id="dopytForm" class="contact-form needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="meno" class="form-label">Meno a priezvisko <span class="req">*</span></label>
+                  <input type="text" class="form-control" id="meno" name="meno" required autocomplete="name">
+                  <div class="invalid-feedback">Napíšte nám, prosím, svoje meno.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">E-mail <span class="req">*</span></label>
+                  <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
+                  <div class="invalid-feedback">Zadajte platnú e-mailovú adresu.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="telefon" class="form-label">Telefón</label>
+                  <input type="tel" class="form-control" id="telefon" name="telefon" autocomplete="tel">
+                </div>
+                <div class="col-md-6">
+                  <label for="typ" class="form-label">Som</label>
+                  <select class="form-select" id="typ" name="typ">
+                    <option value="sukromna-osoba" selected>Súkromná osoba</option>
+                    <option value="firma">Firma alebo organizácia</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="sprava" class="form-label">Čo potrebujete gravírovať? <span class="req">*</span></label>
+                  <textarea class="form-control" id="sprava" name="sprava" rows="5" required placeholder="Napríklad: 10 drevených lopárikov s menom a dátumom, potrebujem do konca mesiaca."></textarea>
+                  <div class="invalid-feedback">Opíšte nám, prosím, aspoň stručne, čo potrebujete.</div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gdpr" name="gdpr" required>
+                    <label class="form-check-label" for="gdpr">Oboznámil/a som sa s <a href="ochrana-osobnych-udajov.html">informáciami o spracovaní osobných údajov</a>. <span class="req">*</span></label>
+                    <div class="invalid-feedback">Bez potvrdenia nemôžeme dopyt spracovať.</div>
+                  </div>
+                </div>
+                <!-- ochrana proti spamu – pole zostáva prázdne -->
+                <div class="d-none" aria-hidden="true">
+                  <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off">
+                </div>
+                <div class="col-12 d-flex flex-wrap align-items-center gap-3">
+                  <button type="submit" class="btn btn-brand btn-lg" id="submitBtn">Odoslať dopyt</button>
+                  <span class="small text-muted">Odpovedáme zvyčajne do jedného pracovného dňa.</span>
+                </div>
+                <div class="col-12">
+                  <div id="formStatus" class="alert d-none mb-0" role="status" aria-live="polite"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pätička -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5">
+          <img src="assets/img/logo.png" alt="GravirFun – gravírujeme vaše nápady" width="640" height="173" class="footer-logo">
+          <p class="text-muted mt-3 mb-0">Laserové gravírovanie na mieru. Personalizované darčeky, reklamné predmety a drobnosti s príbehom.</p>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h4 class="footer-title">Navigácia</h4>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#materialy">Materiály</a></li>
+            <li><a href="#produkty">Produkty</a></li>
+            <li><a href="#firmy">Pre firmy</a></li>
+            <li><a href="#postup">Ako to funguje</a></li>
+            <li><a href="#galeria">Galéria</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <h4 class="footer-title">Prevádzkovateľ</h4>
+          <!-- DOPLNIŤ: právna forma, adresa, IČO, DIČ / IČ DPH -->
+          <address class="footer-address">
+            <strong>Jomi Lux</strong><br>
+            Ulica 1, 000 00 Mesto<br>
+            IČO: 00 000 000<br>
+            DIČ: 0000000000<br>
+            <a href="mailto:obj.gravirfun@gravirfun.sk">obj.gravirfun@gravirfun.sk</a><br>
+            <a href="tel:+421900000000">+421 900 000 000</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> GravirFun. Všetky práva vyhradené.</span>
+        <a href="ochrana-osobnych-udajov.html">Ochrana osobných údajov</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
